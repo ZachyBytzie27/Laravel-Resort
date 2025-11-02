@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+
+/* public/css/app.css */
+:root{
+  --bg1: #071226;
+  --bg2: #042a3d;
+  --card-bg: rgba(255,255,255,0.03);
+  --muted: rgba(230,238,248,0.7);
+}
+
+body{
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: #e6eef8;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom: 60px;
+}
+
+.card{
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: .75rem;
+  color: var(--muted);
+}
+
+.table-dark th, .table-dark td {
+  vertical-align: middle;
+  border-color: rgba(255,255,255,0.04);
+}
+
+.form-control, .form-select {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #e6eef8;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: none;
+  border-color: rgba(255,255,255,0.12);
+}
+
+.btn-outline-light {
+  border-color: rgba(255,255,255,0.08);
+}
+
+h3, h4, h5, h6 {
+  color: #f4fbff;
+}
+
+.transparent-nav nav.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.transparent-nav .navbar a.nav-link,
+.transparent-nav .navbar-brand {
+  color: #fff !important;
+}
+

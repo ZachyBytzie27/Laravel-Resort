@@ -1,0 +1,38 @@
+/* nav.css */
+
+.navbar {
+  background: rgba(10, 25, 47, 0.7); /* dark blue w/ transparency */
+  backdrop-filter: blur(12px); /* blur background */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover effects for buttons */
+.navbar .btn-outline-light {
+  border-radius: 20px;
+  border-width: 1.5px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+  color: #fff;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #e6f1ff !important;
+}
+
+/* Mobile toggler */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
