@@ -4,13 +4,13 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use App\Models\Crud;
+use App\Models\crud;
 
 class AdminSeeder extends Seeder
 {
     public function run(): void
     {
-        Crud::create([
+        crud::create([
             'fullname' => 'admin',
             'username' => 'admin',
             'email' => 'admin@gmail.com',
